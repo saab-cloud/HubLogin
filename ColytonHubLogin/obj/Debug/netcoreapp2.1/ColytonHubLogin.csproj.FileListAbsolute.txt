@@ -1,0 +1,11 @@
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\obj\Debug\netcoreapp2.1\ColytonHubLogin.csproj.CoreCompileInputs.cache
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\obj\Debug\netcoreapp2.1\ColytonHubLogin.AssemblyInfoInputs.cache
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\obj\Debug\netcoreapp2.1\ColytonHubLogin.AssemblyInfo.cs
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\bin\Debug\netcoreapp2.1\ColytonHubLogin.deps.json
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\bin\Debug\netcoreapp2.1\ColytonHubLogin.dll
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\bin\Debug\netcoreapp2.1\ColytonHubLogin.pdb
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\obj\Debug\netcoreapp2.1\ColytonHubLogin.dll
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\obj\Debug\netcoreapp2.1\ColytonHubLogin.pdb
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\bin\Debug\netcoreapp2.1\ColytonHubLogin.runtimeconfig.json
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\bin\Debug\netcoreapp2.1\ColytonHubLogin.runtimeconfig.dev.json
+D:\Sahr\Projects\ColytonHubLoginApp\ColytonHubLogin\ColytonHubLogin\obj\Debug\netcoreapp2.1\ColytonHubLogin.csprojAssemblyReference.cache
