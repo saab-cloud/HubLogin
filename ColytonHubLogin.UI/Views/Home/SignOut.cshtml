@@ -1,0 +1,43 @@
+﻿
+<!Doctype Html>
+<html>
+<head>
+    @{
+        ViewData["Title"] = "SignOut";
+    }
+    @model ColytonHubLogin.UI.Models.Home.SignOutViewModel
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+<body>
+    <div>
+        <h2>Sign Out of Colyton Hub </h2>
+    </div>
+    <div>
+        <form method="post" class="form-horizontal">
+            <div style="border: 1px solid green ">
+                <div class="form-group">
+                    <br />
+
+                    <br />
+                    <br />
+                    <label asp-for="CardNum" class="col-sm-4 control-label "></label>
+                    <div class="col-sm-4">
+                        <input asp-for="CardNum" class="form-control" />
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="boldAsterisk alert-danger" >@Model.ErrorStr</span>
+                    </div>
+                    <br />
+
+                    <br />
+                    <div>
+                        <div class="col-sm-offset-5 col-sm-10">
+                            <button type="submit" class="btn btn-lg col-sm-2">Sign Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

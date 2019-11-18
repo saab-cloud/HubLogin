@@ -1,0 +1,85 @@
+﻿<!Doctype HTML>
+<html>
+<head>
+    @{
+        ViewData["Title"] = "SignIn";
+    }
+    @model ColytonHubLogin.UI.Models.Home.SignInViewModel
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+<body>
+    <div>
+        <h2>Sign Into Colyton Hub </h2>
+        <p>Fields marked with * are required</p>
+    </div>
+    
+    <div>
+        <form method="post" class="form-horizontal">
+            <div style="border: 1px solid green">
+                <div class="form-group">
+                    <br />
+                    
+                    <br />
+                    <br />
+                    <label asp-for="FirstName" class="col-sm-4 control-label "></label>
+                    <div class="col-sm-4">
+                        <input asp-for="FirstName" class="form-control" />
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="boldAsterisk alert-danger" asp-validation-for="FirstName"></span>
+                    </div>
+                    <br />
+
+                    <br />
+                    <label asp-for="LastName" class="col-sm-4 control-label"></label>
+                    <div class="col-sm-4">
+                        <input asp-for="LastName" class="form-control" />
+                    </div>
+                    <div class="col-sm-4">
+                        <span asp-validation-for="LastName" class="boldAsterisk alert-danger"></span>
+                    </div>
+                    <br />
+
+                    <br />
+                    <label asp-for="CardNum" class="col-sm-4 control-label"></label>
+                    <div class="col-sm-4">
+                        <input asp-for="CardNum" class="form-control" />
+                    </div>
+                    <div class="col-sm-4">
+                        <span asp-validation-for="CardNum" class="boldAsterisk alert-danger"></span>
+                    </div>
+                    <br />
+                    <br />
+                    <label asp-for="Reason" class="col-sm-4 control-label"></label>
+                    <div class="col-sm-4">
+                        <input asp-for="Reason" class="form-control" />
+                    </div>
+                    <br />
+
+                    <br />
+                    <label asp-for="IsSignature" class="col-sm-4 control-label"></label>
+                    <div class="col-sm-4">
+                        <input type="checkbox" asp-for="IsSignature"  />
+                        
+                    </div>
+                    <div class="col-sm-4">
+                        <span asp-validation-for="IsSignature" class="boldAsterisk alert-danger"></span>
+                        <span class="boldAsterisk alert-danger">@Model.ErrorSignature</span>
+                    </div>
+                    <br />
+
+                    <br />
+                    <div>
+                        <div class="col-sm-offset-5 col-sm-10">
+                            <button type="submit" class="btn btn-lg col-sm-2">Sign In</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+

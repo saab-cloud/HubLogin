@@ -1,0 +1,72 @@
+﻿<!Doctype html>
+<html>
+<head>
+    @{
+        ViewData["Title"] = "Home";
+    }
+    @model IEnumerable<ColytonHubLogin.UI.Models.Home.SignInViewModel>
+</head>
+<body>
+    <br /> 
+    <div>
+        <h3>Colyton Community Hub Sign In for @DateTime.Today.DayOfWeek the @DateTime.Today.ToShortDateString()</h3>
+    </div>
+    <div style="border: 1px solid green">
+        <div class="col-sm-1">
+            <input type="button" class="btn btn-success btn-lg" value="Sign In"
+                   onclick="location.href='@Url.Action("SignIn", "Home")'" />
+        </div>
+
+        @*<div class="col-sm-12">
+            <input type="button" class="btn btn-success btn-lg" value="Sign Out"
+                   onclick="location.href='@Url.Action("SignOut", "Home")'" />
+        </div>*@
+    </div>
+   @*<div>
+
+        <span>Date:@DateTime.Today.ToShortDateString()</span>
+    </div>*@
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Card Number</th>
+                    <th>Reason</th>
+                    <th>Sign In Time</th>
+                    <th>Sign Out Time</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var loginDet in Model)
+                {
+                <tr>
+                    <td>@loginDet.FirstName</td>
+                    <td>@loginDet.LastName</td>
+                    <td>@loginDet.CardNum</td>
+                    <td>@loginDet.Reason</td>
+                    <td>@loginDet.SignInDateTime.ToShortTimeString()</td>
+                    <td>@loginDet.SignOutDateTime.ToShortTimeString()</td>
+                    @{
+//if (loginDet.FlagSignOut == false)
+//{
+                            <td>
+                                <a asp-controller="Home" asp-action="SignOut" asp-route-id="@loginDet.Id">Sign Out</a>
+                                @*<input type="button" class="btn btn-success btn-sm" value="Sign Out"
+                    onclick="location.href='@Url.Action("SignOut", "Home")'" />*@
+
+                            </td>
+                        @*}*@
+                    }
+
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
